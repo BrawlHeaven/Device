@@ -3,32 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two Pictures One Above the Other</title>
+    <title>Landing Page</title>
     <style>
-        body {
-          position: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #1041c1;
+        #iframeContainer {
+            display: none;
+            margin-top: 20px;
         }
-        .picone {
-          position: center;
-            max-width: 80%;
-            height: auto;
-            margin-top: 10px;
-            margin-left: 40px;
-        }
-         
-       
     </style>
 </head>
 <body>
-    <a href="https://brawlerheaven.blogspot.com/">
-    <img class="picone" src="pitoka.jpg" alt="Image 1">
-    </a>
+    <h1>Welcome to Our Landing Page</h1>
+    <button id="showIframeButton">Click to Show Content</button>
+    <div id="iframeContainer">
+        <iframe id="iframe" src="https://mobileverify.net/fl/e1zww" width="600" height="400" frameborder="0"></iframe>
+    </div>
+
+    <script>
+        document.getElementById('showIframeButton').addEventListener('click', function() {
+            document.getElementById('iframeContainer').style.display = 'block';
+        });
+    </script>
 </body>
 </html>
